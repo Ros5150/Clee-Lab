@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <form method="POST" action="/pedidos/salvar">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="descricao">Descrição do Pedido:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
